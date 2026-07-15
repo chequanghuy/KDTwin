@@ -170,10 +170,10 @@ class Dataset(torch.utils.data.Dataset):
         self.valid=valid
         self.calib = calib
         if valid:
-            self.root = "/home/ceec/huycq/data/bdd100k/images/val"
+            self.root = os.path.join(data_dir, "bdd100k/images/val")
             self.names=os.listdir(self.root)
         else:
-            self.root = "/home/ceec/huycq/data/bdd100k/images/train"
+            self.root = os.path.join(data_dir, "bdd100k/images/train")
             self.names=os.listdir(self.root)
 
     def __len__(self):
