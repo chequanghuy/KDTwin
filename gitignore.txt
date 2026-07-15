@@ -1,0 +1,39 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyd
+*.pyc
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# Training outputs
+runs/
+wandb/
+logs/
+
+# Model checkpoints
+*.engine
+*.torchscript
+*.tflite
+*.rknn
+
+
+# Temporary files
+*.tmp
+*.log
+.DS_Store
+Thumbs.db
+
+# Secrets and local settings
+.env
+.env.*
+config.local.*
